@@ -3,7 +3,7 @@ This is a single page application featuring use of knockout.js javascript framew
 
 ## Code
 1. CSS
-* Bootstrap has been used for styling.
+* Bootstrap has been used for styling and responsiveness.
 
 2. Javascript
 * knockout-3.2.0.js (Knockout framework)

@@ -20,5 +20,5 @@ This is a single page application featuring use of knockout.js javascript framew
 Download project and open index.html
 
 ## Live example
-
+Live app can be viewed [here](https://arushisingh90.github.io/Neighborhood_map/) 
 

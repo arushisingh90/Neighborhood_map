@@ -19,6 +19,10 @@ This is a single page application featuring use of knockout.js javascript framew
 ## Installation
 Download project and open index.html
 
+## Credits
+* Stackoverflow
+* Took a look at [This]https://github.com/gmawji/neighborhood-map github repo to understand how to implement filter
+
 ## Live example
 Live app can be viewed [here](https://arushisingh90.github.io/Neighborhood_map/) 
 

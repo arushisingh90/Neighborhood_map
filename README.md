@@ -14,7 +14,7 @@ This is a single page application featuring use of knockout.js javascript framew
 
 ## APIs
 * Google maps API has been used for map, markers and information window.
-* Zompato API has been used to load restaurant list and their rating.
+* Zomato API has been used to load restaurant list and their rating.
 
 ## Installation
 Download project and open index.html

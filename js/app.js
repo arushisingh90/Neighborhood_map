@@ -1,4 +1,5 @@
 var map; 
+var zomatoUserKey = "5b8fc9e58f549c2195fdff781cf50b8e";
 function viewModel(){
 	var self = this;
 	var markers = new Array();
@@ -48,18 +49,20 @@ function viewModel(){
     }, this);
 
  	this.initMap = function() {
+    var latitude = 37.4011695;
+    var longitude = -122.0135755;
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
-          center: {lat: 37.4011695, lng: -122.0135755}
+          center: {lat: latitude, lng: longitude}
         });
 
         //Fetches restaurant data using Zomato API
-		var url = "https://developers.zomato.com/api/v2.1/geocode?lat=37.4011695&lon=-122.0135755";
+		var url = "https://developers.zomato.com/api/v2.1/geocode?lat=" + latitude.toString() +"&lon=" + longitude.toString();
 		fetch(url , {
       		method: "GET",
       		headers: {
         		"Accept": "application/json",
-        		"user-key": "5b8fc9e58f549c2195fdff781cf50b8e",
+        		"user-key": zomatoUserKey,
       		},
     	}).then(function(response) {
     		return response.json();
@@ -97,6 +100,11 @@ function viewModel(){
     };
     this.initMap();
 }
+
+showError = function showError(){
+  alert('There has been a problem with fetching map data');
+};
+
 function start() {
 	ko.applyBindings(new viewModel());
 }
